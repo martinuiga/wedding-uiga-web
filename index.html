@@ -12,15 +12,15 @@
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
-  <!-- <link rel="manifest" href="site.webmanifest"> -->
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+  <link rel="apple-touch-icon" href="32345-lemon-icon.png">
 
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/bootstrap-grid.css">
   <link rel="stylesheet" href="css/bootstrap-reboot.css">
   <link rel="stylesheet" href="css/bootstrap-utilities.css">
   <link rel="stylesheet" href="css/main.css">
+
+  <script src="js/maps.js"></script>
 
   <meta name="theme-color" content="#fafafa">
 </head>
@@ -61,27 +61,38 @@
       </div>
     </div>
 
+
     <div class="row pt-5 pb-4">
       <div class="col-4"></div>
       <div class="col-4">
         <div class="card w-100">
           <div class="card-body">
-            <h5 class="card-title">KUS?</h5>
-            <p class="card-text">Tseremoonia leiab aset Chiostro di San Francesco, mis asub Sorrento linnas ning pidu/öhtusöök Massa Lubrenses villas, mis on Sorrentost ~5 km kaugusel. Villa aadressiks on Via Leonardo Liparulo 1.</p>
+            <h5 class="card-title">MILLAL</h5>
+            <p class="card-text">
+              Oleme broneerinud peokoha 24-26 juuliks, tseremoonia leiab aset 25. juulil 2022.a kell 16:30, kuid olete oodatud meiega aega veetma ka 24. ja 26. juulil.</p>
           </div>
         </div>
 
         <div class="card w-100">
           <div class="card-body">
-            <h5 class="card-title">MILLAL?</h5>
-            <p class="card-text">25.juuli 2022.a toimub põhiline üritus, kuid olete oodatud meiega aega veetma ka 24.juulil ja 26. juulil.</p>
+            <h5 class="card-title">KUS</h5>
+            <p class="card-text">
+              Tseremoonia leiab aset Chiostro di San Francesco, mis asub Sorrento linnas ning pidu/öhtusöök Massa Lubrenses villas, mis on Sorrentost ~5 km kaugusel. Villa aadressiks on Via Leonardo Liparulo 1.</p>
+              <div id="map"></div>
           </div>
         </div>
 
         <div class="card w-100">
           <div class="card-body">
             <h5 class="card-title">ÖÖBIMINE</h5>
-            <p class="card-text">Kui on vaja abi ööbimise leidmisega, siis võime alati aidata :) Soovitame leida ööbimise Massa Lubrenses, et ei oleks vaja muretseda transpordi pärast.</p>
+            <p class="card-text">Kui on vaja abi ööbimise leidmisega, siis saame alati aidata! :) Soovitame leida ööbimise Massa Lubrenses, et ei oleks vaja muretseda transpordi pärast.</p>
+          </div>
+        </div>
+
+        <div class="card w-100">
+          <div class="card-body">
+            <h5 class="card-title">TRANSPORT</h5>
+            <p class="card-text">Transport peokoha ja tseremoonia vahel on organiseeritud bussi ja autodega</p>
           </div>
         </div>
 
@@ -99,6 +110,12 @@
   <script src="js/bootstrap.js"></script>
   <script src="js/bootstrap.bundle.js"></script>
   <script src="js/bootstrap.esm.js"></script>
+
+  <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDRqZ06dOYqwJH2uZdQ5xobMYte7YKykY&callback=initMap&v=weekly&channel=2"
+    async
+  ></script>
 </body>
 
 </html>
